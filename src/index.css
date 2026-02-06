@@ -1,0 +1,62 @@
+/* ✅ REQUIRED for Tailwind v4 */
+@import "tailwindcss";
+
+/* =====================================================
+   🌈 THEME VARIABLES (WordPress-like Theme Panel)
+   ===================================================== */
+
+:root {
+  --container: 72rem;
+  --section: 8rem;     /* ⬅️ increased from 6rem */
+  --radius: 1rem;
+  --shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* =====================================================
+   🌙 DARK MODE VARIABLES
+   ===================================================== */
+
+.dark {
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.4);
+  --shadow-strong: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* =====================================================
+   🔤 BASE TYPOGRAPHY (Astra / Neve style)
+   ===================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  line-height: 1.65;
+}
+
+/* Improve paragraph readability */
+p {
+  letter-spacing: 0.2px;
+}
+
+/* =====================================================
+   📌 GLOBAL HELPERS
+   ===================================================== */
+
+/* Prevent header overlap when scrolling */
+section {
+  scroll-margin-top: 100px;
+}
+
+/* Better image rendering */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+.group:hover img {
+  filter: drop-shadow(0 10px 20px rgba(79,70,229,0.4));
+}
