@@ -7,5 +7,5 @@ export default defineConfig({
     react(),
     tailwindcss(), // ✅ REQUIRED FOR TAILWIND v4
   ],
-  base: "/portfolio/", // your repo name
+  base: "/", // your repo name
 });
