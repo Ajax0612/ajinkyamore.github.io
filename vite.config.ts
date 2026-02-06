@@ -7,5 +7,5 @@ export default defineConfig({
     react(),
     tailwindcss(), // ✅ REQUIRED FOR TAILWIND v4
   ],
-  base: "/", // your repo name
+  base: "/ajinkyamore.github.io/", // your repo name
 });
