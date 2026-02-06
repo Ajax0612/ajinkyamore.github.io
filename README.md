@@ -1,73 +1,67 @@
-# React + TypeScript + Vite
+# 🌐 Ajinkya More — Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built to showcase my skills, projects, and experience as a software / QA engineer.
 
-Currently, two official plugins are available:
+Built a personal portfolio using React + TypeScript, styled with Tailwind CSS, animated with Framer Motion, bundled by Vite, and deployed on GitHub Pages.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 **Live Site:**  
+👉 https://ajax0612.github.io/ajinkyamore.github.io/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Modern, responsive UI
+- Built with **Vite + TypeScript**
+- Fast load times and optimized build
+- Deployed using **GitHub Pages**
+- Clean project structure for easy maintenance
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Frontend:** React 19 + TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Forms:** React Hook Form
+- **Email:** EmailJS
+- **Build Tool:** Vite
+- **Linting:** ESLint
+- **Deployment:** GitHub Pages
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📁 Project Structure
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```text
+.
+├── public/          # Static assets
+├── src/             # Application source code
+├── index.html       # Entry HTML file
+├── vite.config.ts   # Vite configuration
+├── tsconfig*.json   # TypeScript configurations
+└── package.json     # Project dependencies & scripts
+
+
+
+
+
+## Clone the repository:
+
+git clone https://github.com/ajax0612/ajinkyamore.github.io.git
+cd ajinkyamore.github.io
+
+
+## Install dependencies:
+npm install
+
+
+## Run the development server:
+npm run dev
+
+
+## Build and deploy for production:
+npm run build
+npm run deploy
